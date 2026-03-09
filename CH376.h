@@ -238,7 +238,7 @@ char ReadFile( char *buff ){
 }
 
 char InitSPI(){
-	setup_spi(SPI_MASTER | SPI_H_TO_L | SPI_CLK_DIV_64 | SPI_XMIT_L_TO_H);
+	setup_spi(SPI_MASTER | SPI_H_TO_L | SPI_XMIT_L_TO_H);
 	#define sdcard_xfer(x)    spi_read(x)
 	
 	output_high(SDCARD_PIN_SELECT);
